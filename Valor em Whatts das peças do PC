@@ -1,0 +1,29 @@
+programa {
+  funcao inicio() {
+   
+    real processador
+    real placa_de_video
+    real placa_mae
+    real ram
+    real memoria
+    real outros
+    real r1
+    real r2
+ 
+    escreva("Digite o Consumo em Whatss do Processador: ")
+    leia(processador)
+    escreva("Digite o Consumo em Whatss da Placa de Vídeo: ")
+    leia(placa_de_video)
+    escreva("Digite o Consumo em Whatss da Placa Mãe: ")
+    leia(placa_mae)
+    escreva("Digite o Consumo em Whatss da Memória Ram: ")
+    leia(ram)
+    escreva("Digite o Consumo em Whatss da(s) Memória: ")
+    leia(memoria)
+    escreva("Se quiser, digite o valor em Whatts dos outros componentes presentes do Pc:")
+    leia(outros)
+    r1 = processador + placa_de_video + placa_mae + ram + memoria + outros
+    r2 = r1 * 1.20
+    escreva("O valor em Whatts sem a margem de Segurança é: ",r1, "\n", "O valor em Whatss com a margem de segurança é: ", r2)
+  }
+}
