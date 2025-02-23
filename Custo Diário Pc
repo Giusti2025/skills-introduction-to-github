@@ -1,0 +1,33 @@
+programa {
+  funcao inicio() {
+   
+    real c_t_pc
+    real e_f
+    real t_u
+    real c_e
+    real r1
+    real r2
+    real r3
+    real r4
+ 
+    escreva("Digite o consumo total de seu Pc:")
+    leia(c_t_pc)
+    escreva("Digite a potencia de sua fonte de alimentação: ")
+    leia(e_f)
+    escreva("Digite quanto tempo o Pc fica sendo utilizado: ")
+    leia(t_u)
+    escreva("Digite quanto é o custo da energia elétrica: ")
+    leia(c_e)
+
+    r1 = (c_t_pc / e_f) * 100
+    r2 = (c_t_pc / 1000) * t_u
+    r3 = r2 * c_e
+    r4 = r3 * 30
+
+    escreva("\nA energia puxada da tomada é de: ", r1, "%\n")
+    escreva("O consumo diário é de: ", r2, " kWh\n")
+    escreva("O custo diário é: R$ ", r3, "\n")
+    escreva("O custo mensal é: R$ ", r4, "\n")
+ 
+  }
+}
